@@ -1,0 +1,21 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.19.0
+A -fPIC
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U persname_package%s	persname_package.ads	18b01d1e NE OO PK
+
+D persname_package.ads	20240326115125 18b01d1e persname_package%s
+D system.ads		20190518041255 085b6ffb system%s
+G a e
+G c Z s s [TpersnameBIP persname_package 3 4 none]
+X 1 persname_package.ads
+1K9*persName_package 5l5 5e21
+3A9*persName(character)<integer>
+

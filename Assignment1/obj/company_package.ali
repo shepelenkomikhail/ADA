@@ -1,0 +1,120 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.19.0
+A -fPIC
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U company_package%b	company_package.adb	0d89c504 NE OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W person_package%s	person_package.adb	person_package.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+U company_package%s	company_package.ads	97e0bbc7 EE NE OO PK IL
+W persname_package%s	persname_package.ads	persname_package.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-charac.ads		20190518041255 2d3ec45b ada.characters%s
+D a-chlat1.ads		20190518041255 66457d31 ada.characters.latin_1%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D company_package.ads	20240326114200 8f50a6d9 company_package%s
+D company_package.adb	20240326115428 a1929cf5 company_package%b
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D persname_package.ads	20240326115125 18b01d1e persname_package%s
+D person_package.ads	20240326113747 ebfa5774 person_package%s
+D person_package.adb	20240326114615 7ab6daf2 person_package%b
+D system.ads		20190518041255 085b6ffb system%s
+D s-conca2.ads		20190518041255 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-imgint.ads		20190518041254 02dbe0c2 system.img_int%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [processpurchase company_package 7 14 none]
+G c Z s b [getstockprice company_package 8 13 none]
+G c Z s b [initcompany company_package 9 14 none]
+G c Z s b [printcmp company_package 10 14 none]
+G c Z s s [Towners_arrBIP company_package 14 4 none]
+G c Z s s [companyIP company_package 16 9 none]
+G c Z b b [printpersname company_package 48 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 1r19 1r47 1r60 53r27 57r7 58r7
+X 2 a-charac.ads
+16K13*Characters 18e19 11|1r23 1r64 53r31
+X 3 a-chlat1.ads
+18K24*Latin_1 296e27 11|1w34 1r75 53r42
+25e4*NUL{character} 11|53r50
+X 8 a-textio.ads
+57K13*Text_IO 727e16 11|1w10 1r51 57r11 58r11
+264U14*New_Line 11|58s19
+465U14*Put 11|57s19
+508U14*Put_Line 11|35s10 37s10 39s10 44s7 63s9 64s9 65s9 66s9 67s9 68s7 74s7
+X 10 company_package.ads
+3K9*company_package 13E4 26l5 26e20 11|3b14 78l5 78t20
+5R9*Company 7r40 8r30 9r33 10r26 16c9 24e14 11|5r33 13r30 18r40 61r26
+7U14*ProcessPurchase 7=30 7>49 7>63 11|18b14 45l8 45t23
+7r30 C{5R9} 11|18b30 19r41 25r21 26r13 32r31 32r55 33m10 33r35 34m10 34r19
+. 43m7 43r21
+7a49 Nm{14|3A9} 11|18b49 26r27 34r45
+7i63 AmountStocks{integer} 11|18b63 19r26
+8V13*GetStockPrice{integer} 8>27 11|13b13 16l8 16t21
+8r27 C{5R9} 11|13b27 15r14
+9U14*InitCompany 9<26 9>42 9>55 9>75 9>97 11|5b14 11l8 11t19
+9r26 C{5R9} 11|5b26 7m7 8m7 9m7 10m7
+9i42 ID{integer} 11|5b42 7r15
+9i55 Max_Owner{integer} 11|5b55 8r22
+9i75 Stock_Price{integer} 11|5b75 9r24
+9i97 Max_Stock{integer} 11|5b97 10r22
+10U14*PrintCmp 10>23 11|61b14 76l8 76t16
+10r23 C{5R9} 11|61b23 63r37 64r44 65r46 66r44 67r42 70r19 71r24
+13N4 max 14r32 18r30
+14A9 Owners_Arr(14|3A9)<integer> 22r16
+17i7*ID{integer} 11|7m9 63r39
+18i7*max_owner{integer} 11|8m9 32r57 64r46
+19i7*stock_price{integer} 11|9m9 15r16 19r43 65r48
+20i7*max_stock{integer} 11|10m9 66r46
+21i7*fundings{integer} 11|43m9 43r23 67r44
+22a7*owners{14A9} 11|26r15 34m12 71r26
+23i7*current_owner_count{integer} 11|25r23 32r33 33m12 33r37 34r21 70r21
+X 11 company_package.adb
+19i4 TotalCost{integer} 43r34 44r57
+23b7 AlreadyOwner{boolean} 27m13 32r14 36r13
+25i11 I{integer} 26r22
+48U14 PrintPersName 48b14 48>28 59l8 59t21 71s10
+48a28 Nm{14|3A9} 52r14 53r19 54r17
+49a7 S{string} 54m9 57r23
+50i7 Len{natural} 55m9 55r16 57r28
+52i9 I{integer} 53r22 54r11 54r20
+70i11 I{integer} 71r33
+X 14 persname_package.ads
+1K9*persName_package 10|1w6 1r28 14|5e21
+3A9*persName(character)<integer> 10|7r53 14r40 11|18r53 48r33 49r20
+X 15 person_package.ads
+8k9*person_package 11|2w6 15|35e19
+

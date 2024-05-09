@@ -1,0 +1,116 @@
+V "GNAT Lib v2019"
+M P W=b
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.19.0
+A -fPIC
+P ZX
+
+RN
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		de870b09 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W company_package%s	company_package.adb	company_package.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W persname_package%s	persname_package.ads	persname_package.ali
+W person_package%s	person_package.adb	person_package.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D company_package.ads	20240326114200 8f50a6d9 company_package%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D main.adb		20240326115322 0c6932d7 main%b
+D persname_package.ads	20240326115125 18b01d1e persname_package%s
+D person_package.ads	20240326113747 ebfa5774 person_package%s
+D person_package.adb	20240326114615 7ab6daf2 person_package%b
+D system.ads		20190518041255 085b6ffb system%s
+D s-conca2.ads		20190518041255 02a0d7d0 system.concat_2%s
+D s-conca4.ads		20190518041256 7e642b20 system.concat_4%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-imenne.ads		20190518041255 614c06c0 system.img_enum_new%s
+D s-imgint.ads		20190518041254 02dbe0c2 system.img_int%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [main standard 6 11 none]
+G r i none [main standard 6 11 none] [person_package standard 8 9 none]
+G r s company [main standard 6 11 none] [companyIP company_package 16 9 none]
+G r c none [main standard 6 11 none] [initcompany company_package 9 14 none]
+G r c none [main standard 6 11 none] [printcmp company_package 10 14 none]
+G r c none [main standard 6 11 none] [getstockprice company_package 8 13 none]
+G r c none [main standard 6 11 none] [processpurchase company_package 7 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 1r23
+X 6 a-textio.ads
+57K13*Text_IO 727e16 11|1w10 1r27
+508U14*Put_Line 11|43s4 44s4 48s4 51s4 58s4 61s4 62s4 64s4
+X 8 company_package.ads
+3K9*company_package 26e20 11|2w6 2r27
+5R9*Company 24e14 11|35r17 37r50
+7U14*ProcessPurchase 11|37r74
+8V13*GetStockPrice{integer} 11|37r59
+9U14*InitCompany 11|40s4
+10U14*PrintCmp 11|52s4 59s4 65s4
+X 11 main.adb
+6U11*Main 6b11 66l5 66t9
+7E9 Job 7e47 10r32 30r50
+7n17 Doctor{7E9} 13r15
+7n25 Engineer{7E9} 14r15
+7n35 Businessman{7E9} 15r15 41r38
+8E9 Experience 8e47 20r32 30r69
+8n24 Junior{8E9} 23r15
+8n32 Medior{8E9} 24r15 41r51
+8n40 Senior{8E9} 25r15
+10V13 MyGetBaseSalary{integer} 10b13 10>29 18l8 18t23 31r60
+10e29 J{7E9} 12r12
+20V13 MyGetMultiplier{integer} 20b13 20>29 28l8 28t23 31r94
+20e29 E{8E9} 22r12
+30K12 MyPerson[13|8] 32r8 37r32
+34r4 newPerson{13|10R9[30]} 41m13 41r13 45r14 47m9 47r9 49r14 54m27 54r27
+. 55m27 55r27 56m27 56r27 63r14
+35r4 newCompany{8|5R9} 40m16 52r13 54m15 54r15 55m15 55r15 56m15 56r15 59r13
+. 65r13
+37U14 MyBuyStock[13|21] 54s4 55s4 56s4
+X 12 persname_package.ads
+1K9*persName_package 11|3w6 3r28 12|5e21
+X 13 person_package.ads
+4E9 Job 11|30r43
+5E9 Experience 11|30r55
+6V18 GetBaseSalary{integer} 11|31r43
+7V18 GetMultiplier{integer} 11|31r77
+8k9*person_package 11|4w6 30r28 13|35e19
+10R9 Person 11|34r16[30]
+12U14 InitPers 11|41s4[30]
+14U14 Save 11|47s4[30]
+21u14 BuyStock 11|37r41[30]
+23U14 PrintPers 11|45s4[30] 49s4[30] 63s4[30]
+

@@ -1,0 +1,26 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.19.0
+A -fPIC
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U shared_types%s	shared_types.ads	1898774b NE OO PK IL
+
+D shared_types.ads	20240326104818 1898774b shared_types%s
+D system.ads		20190518041255 085b6ffb system%s
+G a e
+X 1 shared_types.ads
+1K9*shared_types 6l5 6e17
+3E9*Job 3e47
+3n17*Doctor{3E9}
+3n25*Engineer{3E9}
+3n35*Businessman{3E9}
+4E9*Experience 4e47
+4n24*Junior{4E9}
+4n32*Medior{4E9}
+4n40*Senior{4E9}
+

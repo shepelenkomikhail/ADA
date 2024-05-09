@@ -1,0 +1,107 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=core2
+A -mmacosx-version-min=10.19.0
+A -fPIC
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U person_package%b	person_package.adb	3fb858eb NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U person_package%s	person_package.ads	f34a4a6a BN EE NE OO PK GE IL
+W persname_package%s	persname_package.ads	persname_package.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D persname_package.ads	20240326115125 18b01d1e persname_package%s
+D person_package.ads	20240326113747 ebfa5774 person_package%s
+D person_package.adb	20240326114615 7ab6daf2 person_package%b
+D system.ads		20190518041255 085b6ffb system%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [person_package standard 8 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 2r5
+X 6 a-textio.ads
+57K13*Text_IO 727e16 12|1w10 2r9
+508U14*Put_Line 12|27s5 28s5 29s5 30s5 34s5 35s5 48s10 49s10 52s10 53s10
+. 69s7 70s7 71s7 72s7 73s7
+X 10 persname_package.ads
+1K9*persName_package 5e21 11|1w6 1r28
+3A9*persName(character)<integer> 11|12r45 13r26 15r36 20r54 29r12 12|6r45
+. 13r26 58r36
+X 11 person_package.ads
+4E9 Job 6r35 12r58 13r39 30r12 12|6r58 13r39 70r16
+5E9 Experience 7r35 12r66 13r47 31r13 12|6r66 13r47 71r16
+6V18 GetBaseSalary{integer} 6>32 12|23s28
+6*32 J{4E9}
+7V18 GetMultiplier{integer} 7>32 12|24s34
+7*32 E{5E9}
+8k9*person_package 4z9 5z9 6z18 7z18 28E9 35l5 35e19 12|4b14 77l5 77t19
+10R9*Person 12r33 13r66 14r29 21r52 23r30 28c9 33e14 12|6r33 13r66 14r13
+. 22r29 40r52 67r30
+12U14*InitPers 12=23 12>41 12>55 12>63 12|6b14 11l8 11t16
+12r23 P{10R9} 12|6b23 8m7 9m7 10m7
+12a41 Nm{10|3A9} 12|6b41 8r15
+12*55 J{4E9} 12|6b55 9r15
+12*63 E{5E9} 12|6b63 10r16
+13V13*InitPers{10R9} 13>22 13>36 13>44 12|13b13 20l8 20t16
+13a22 Nm{10|3A9} 12|13b22 16r18
+13*36 J{4E9} 12|13b36 17r18
+13*44 E{5E9} 12|13b44 18r19
+14U14*Save 14=19 14>37 12|22b14 37l8 37t12
+14r19 P{10R9} 12|22b19 23r42 24r48 32m5 32r18 34r46
+14i37 Months{integer} 12|22b37 30r41 32r31
+15V13*PersNameToString{string} 15>30 12|58b13 65l8 65t24 69s16
+15a30 Name{10|3A9} 12|58b30 59r24 61r16 62r21
+18+12 Company 19r34 20r41 21r33 12|40r33
+19V21 GetStockP{integer} 19>31 12|41s30
+19*31 C{18+12}
+20U22 ProcessP 20=31 20>50 20>64 12|45s10
+20*31 C{18+12}
+20a50 Nm{10|3A9}
+20i64 AmountStocks{integer}
+21u14*BuyStock 21=23 21=42 21>60 12|40b14 56l8 56t16
+21*23 C{18+12} 12|40b23 41r40 45m19
+21r42 P{10R9} 12|40b42 44r10 45r22 46m10 46r23 48r26
+21i60 StocksToBuy{integer} 12|40b60 42r42 45r28 48r61
+23U14*PrintPers 23>24 12|67b14 75l8 75t17
+23r24 P{10R9} 12|67b24 69r33 70r26 71r33 72r16
+29a7 Nm{10|3A9} 12|8m9 16m12 45r24 48r28 69r35
+30*7 Jb{4E9} 12|9m9 17m12 23r44 70r28
+31*7 Exp{5E9} 12|10m9 18m12 24r50 71r35
+32i7 Savings{integer} 12|32m7 32r20 34r48 44r12 46m12 46r25 72r18
+X 12 person_package.adb
+14r7 newP{11|10R9} 16m7 17m7 18m7 19r11
+23i5 BaseSalary{integer} 25r31 27r46
+24i5 SalaryMultiplier{integer} 25r44 28r52
+25i5 MonthlySalary{integer} 29r49 32r40
+41i7 StockPrice{integer} 42r29
+42i7 TotalCost{integer} 44r23 46r35
+59a7 Temp{string} 62m10 64r14
+61i11 I{integer} 62r15 62r26
+
